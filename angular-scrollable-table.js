@@ -418,7 +418,6 @@
         },
         link: function (scope, element) {
           element.bind('mousewheel', function (event) {
-            console.log("Prevent the scroll!");
             var heightDif = this.offsetHeight - this.clientHeight,
               maxScrollTop = this.scrollHeight - this.offsetHeight + heightDif;
             if ((this.scrollTop === maxScrollTop && this.scrollTop != 0 && event.originalEvent.deltaY > 0) ||
